@@ -1,4 +1,4 @@
-package devPilot.backend.exception;
+package lucent.backend.exception;
 
 
 import java.time.Instant;

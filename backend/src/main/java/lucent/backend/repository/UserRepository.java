@@ -1,6 +1,6 @@
-package devPilot.backend.repository;
+package lucent.backend.repository;
 
-import devPilot.backend.Entity.User;
+import lucent.backend.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

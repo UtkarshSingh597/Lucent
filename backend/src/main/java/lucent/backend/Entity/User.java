@@ -1,4 +1,4 @@
-package devPilot.backend.Entity;
+package lucent.backend.Entity;
 
 
 import jakarta.persistence.*;

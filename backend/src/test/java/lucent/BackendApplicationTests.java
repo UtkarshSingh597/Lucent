@@ -1,4 +1,4 @@
-package devPilot;
+package lucent;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

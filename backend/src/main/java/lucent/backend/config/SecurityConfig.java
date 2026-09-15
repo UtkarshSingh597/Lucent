@@ -1,6 +1,7 @@
-package devPilot.backend.config;
+package lucent.backend.config;
 
 import lombok.RequiredArgsConstructor;
+import lucent.backend.Security.GithubOAuth2UserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +19,7 @@ import org.springframework.security.web.authentication.*;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
-
+    private final GithubOAuth2UserService gitHubOAuth2UserService;
     private final AuthenticationFailureHandler oauth2AFailureHandler;
     private final AuthenticationSuccessHandler oauth2ASuccessHandler;
 

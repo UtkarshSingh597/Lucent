@@ -1,7 +1,7 @@
-package devPilot.backend.services;
+package lucent.backend.services;
 
-import devPilot.backend.Entity.User;
-import devPilot.backend.repository.UserRepository;
+import lucent.backend.Entity.User;
+import lucent.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.encrypt.TextEncryptor;
 import org.springframework.stereotype.Service;
