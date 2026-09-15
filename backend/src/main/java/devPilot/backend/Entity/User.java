@@ -22,7 +22,7 @@ public class User {
     private UUID id;
 
     @Column(nullable = false, unique = true, name = "github_id")
-    private String githubId;
+    private Long githubId;
 
     @Column(nullable = false, unique = true, name = "github_username", length = 100 )
     private String githubUsername;
@@ -37,7 +37,7 @@ public class User {
     private String accessToken;
 
     @Column(name = "token_scope", length = 500)
-    private String tokenScope;
+    private String tokenScopes;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
