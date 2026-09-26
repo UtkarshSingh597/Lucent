@@ -1,6 +1,7 @@
 package lucent.backend.Security;
 
 import jakarta.security.auth.message.config.AuthConfig;
+import lombok.AllArgsConstructor;
 import lucent.backend.Entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -9,6 +10,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import java.util.Collection;
 import java.util.Map;
 import java.util.UUID;
+
 
 public class AppUserPrincipal implements OAuth2User {
     private final User user;
@@ -20,6 +22,11 @@ public class AppUserPrincipal implements OAuth2User {
     }
     public UUID getId(){
         return user.getId();
+    }
+
+
+    public User getUser() {
+        return user;
     }
 
     @Override
